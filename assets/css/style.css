@@ -241,8 +241,8 @@ html {
     position: fixed;
     top: 0;
     left: 0;
-    color: #F0E5D5;
-    background-color: #f8f7ff;
+    color: #BDA88A;
+    /* background-color: #f8f7ff; */
     width: 60px;
     height: 60px;
     text-align: center;
@@ -257,7 +257,7 @@ html {
 #menu-close {
     cursor: pointer;
     text-align: right;
-    color: #F0E5D5;
+    color: #BDA88A;
     background-color: #f8f7ff;
     width: 100%;
     height: 60px;

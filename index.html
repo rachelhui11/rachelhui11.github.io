@@ -300,7 +300,7 @@
             <div class="right-content">
               <div class="container">
 
-                <form id="contact" action="mailto:huirachel11@gmail.com" method="post" enctype=”multipart/form-data” name=”EmailForm”>
+                <form id="contact" action="https://formspree.io/huirachel11@gmail.com" method="post" enctype=”multipart/form-data” name=”EmailForm”>
 
                   <div class="row">
 
@@ -345,14 +345,14 @@
 
                     <div class="col-md-12">
                       <fieldset>
-                        <textarea
+                        <input
                           name="message" type="text"
                           rows="6"
                           class="form-control"
                           id="message"
                           placeholder="Your Message"
                           required=""
-                        ></textarea>
+                        />
                       </fieldset>
                     </div>
 
@@ -431,6 +431,27 @@
       $(window).scroll(function() {
         checkSection();
       });
+
+
+      $('#contact').submit(function(e) {
+        var name = document.getElementById('name'),
+            email = document.getElementById('email'),
+            subject = document.getElementById('subject'),
+            message = document.getElementById('message');
+        if (!name.value || !email.value || !subject.value || !message.value) {
+          alertify.error('Please check your entries')
+        } else {
+          $.ajax({
+            url: "https://formspree.io/huirachel11@gmail.com",
+            method: "POST",
+            data: $(this).serialize(),
+            dataType: "json"
+          });
+          e.preventDefault()
+          $(this).get(0).reset()
+          alertify.success('Message sent!')
+        }
+      })
     </script>
   </body>
 </html>

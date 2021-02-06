@@ -275,7 +275,7 @@ html {
     right: 10%;
     left: 35%;
     position: relative;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding-bottom: 45px;
     border-bottom: 3px solid rgba(229,229,229, 0.25);
 }
@@ -532,8 +532,8 @@ section.my-work .section-heading {
     width: 48%;
     margin: 1%;
     border-bottom: 2px solid rgba(229,229,229,0.1);
-    padding-bottom: 30px;
-    margin-bottom: 30px;
+    /* padding-bottom: 30px; */
+    margin-bottom: 10px;
 }
 
 .isotope-item img {

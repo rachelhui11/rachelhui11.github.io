@@ -97,9 +97,13 @@ h3 {
   margin-bottom: -15px;
 }
 
-.skill-col {
+.skill-col1 {
   line-height: 1.8;
-  margin-right: 30px;
+  margin-right: 55px;
+}
+
+.skill-col2 {
+  line-height: 1.8;
 }
 
 .title {

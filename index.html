@@ -39,7 +39,7 @@
           <div class="container">
 
             <div class="image">
-              <a href="#"><img src="assets/images/rachel.JPG" alt="logo" /></a>
+              <a href="https://www.linkedin.com/in/shuenyee1"><img src="assets/images/rachel.JPG" alt="logo" /></a>
             </div>
 
             <div class="rachelhui">
@@ -85,7 +85,7 @@
         <div class="container">
           
           <div class="section-heading">
-            <h2 style="letter-spacing: 0.3px">Hello</h2>
+            <h2 style="letter-spacing: 0.3px" id="first">Hello</h2>
             <div class="line-dec"></div>
           </div>
 
@@ -98,7 +98,7 @@
                     Malaysia-born. London-trained. New York-based.<br><br>
                     I make coffee to have the energy to go out and get coffee.<br><br>
                     I make more eye contact with dogs than with humans.<br><br>
-                    I studied Mathematics, Finance and Economics.<br><br>
+                    I studied Mathematics, Finance, Economics and Marketing.<br><br>
                     I am obsessed with attending meetups and networking.<br><br>
                     I was the <span>Head of Communications</span> at Satoshi Systems.<br><br>
                     I am not anymore but they're still cool.<br><br>
@@ -408,7 +408,7 @@
       var checkSection = function checkSection() {
         $(".section").each(function() {
           var $this = $(this),
-            topEdge = $this.offset().top - 80,
+            topEdge = $this.offset().top - 500,
             bottomEdge = topEdge + $this.height(),
             wScroll = $(window).scrollTop();
           if (topEdge < wScroll && bottomEdge > wScroll) {

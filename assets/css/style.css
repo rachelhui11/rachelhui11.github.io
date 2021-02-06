@@ -242,7 +242,6 @@ html {
     top: 0;
     left: 0;
     color: #BDA88A;
-    /* background-color: #f8f7ff; */
     width: 60px;
     height: 60px;
     text-align: center;
@@ -269,6 +268,9 @@ html {
 
 /* Section */
 
+#first {
+    margin-top: 40px;
+}
 .section {
     color: #5a5a64;
     width: 55%;

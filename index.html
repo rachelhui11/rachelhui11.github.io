@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/owl.css" />
     <link rel="stylesheet" href="assets/css/lightbox.css" />
+    <link rel="stylesheet" href="assets/js/css/alertify.css" />
+    <link rel="stylesheet" href="assets/js/css/themes/custom.css" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -300,7 +302,7 @@
             <div class="right-content">
               <div class="container">
 
-                <form id="contact" action="https://formspree.io/huirachel11@gmail.com" method="post" enctype=”multipart/form-data” name=”EmailForm”>
+                <form id="contact" action="https://formspree.io/f/mqkgjgjn" method="post" enctype=”multipart/form-data” name=”EmailForm”>
 
                   <div class="row">
 
@@ -383,6 +385,8 @@
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/lightbox.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/alertify.js"></script>
+
     <script>
       $(".main-menu li:first").addClass("active");
 
@@ -439,10 +443,10 @@
             subject = document.getElementById('subject'),
             message = document.getElementById('message');
         if (!name.value || !email.value || !subject.value || !message.value) {
-          alertify.error('Please check your entries')
+          alertify.error('Whoops! Something is missing.')
         } else {
           $.ajax({
-            url: "https://formspree.io/huirachel11@gmail.com",
+            url: "https://formspree.io/f/mqkgjgjn",
             method: "POST",
             data: $(this).serialize(),
             dataType: "json"

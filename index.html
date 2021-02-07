@@ -435,9 +435,7 @@
             email = document.getElementById('email'),
             subject = document.getElementById('subject'),
             message = document.getElementById('message');
-        if (!name.value || !email.value || !subject.value || !message.value) {
-          alertify.error('Whoops! Something is missing.')
-        } else {
+        if (String(email.value).includes("@")) {
           $.ajax({
             url: "https://formspree.io/f/mqkgjgjn",
             method: "POST",
@@ -447,6 +445,11 @@
           e.preventDefault()
           $(this).get(0).reset()
           alertify.success('Yay! Message sent!')
+          // alertify.success(String(email.value.includes("@")))
+        } else {
+          alertify.error('Please enter a valid email.')
+          // alertify.error(String(email.value.includes("@")))
+          e.preventDefault()
         }
       })
 

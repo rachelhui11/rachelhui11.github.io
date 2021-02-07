@@ -347,14 +347,7 @@
 
                     <div class="col-md-12">
                       <fieldset>
-                        <input
-                          name="message" type="text"
-                          rows="6"
-                          class="form-control"
-                          id="message"
-                          placeholder="Your Message"
-                          required=""
-                        />
+                        <textarea rows="6" name="message" id="message" placeholder="Your Message" required=""></textarea>
                       </fieldset>
                     </div>
 
@@ -453,7 +446,7 @@
           });
           e.preventDefault()
           $(this).get(0).reset()
-          alertify.success('Message sent!')
+          alertify.success('Yay! Message sent!')
         }
       })
     </script>

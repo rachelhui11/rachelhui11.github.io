@@ -213,18 +213,26 @@
 
                 <label><input type="radio" data-type="website" name="isotope-filter"/>
                   <span>website</span></label>
-              </form>
+                </form>
 
               <div class="isotope-box">
                 <div class="isotope-item" data-type="branding">
                   <figure class="snip1321">
                     <img src="assets/images/2.png" alt="Business Card for Roland Gavrilescu"/>
                     <figcaption>
-                      <a href="assets/images/2.png" data-lightbox="image-1" data-title="Business Card for Roland Gavrilescu">
-                      <h4>Business Card</h4></a>
+                      <h4 id="modal-btn">Business Card</h4>
                       <span>Roland Gavrilescu</span>
-                    </figcaption>
+                       </figcaption>
                   </figure>
+                </div>
+
+
+                <div class="modal" style="overflow-y: auto;">
+                  <div class="modal-content">
+                    <img src="assets/images/4.png" alt="Website"/><br>
+                    <img src="assets/images/4.png" alt="Website"/><br>
+                    <img src="assets/images/4.png" alt="Website"/>
+                  </div>
                 </div>
 
                 <div class="isotope-item" data-type="app">
@@ -376,17 +384,21 @@
 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/isotope.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="assets/js/isotope.pkgd.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/lightbox.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/alertify.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
-    <!-- scripts -->
-    <script src="../particles.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+
+    <script src="js/isotope-docs.min.js?6"></script>  
+
+    <!-- <script src="../particles.js"></script>
     <script src="js/app.js"></script>
 
-    <!-- stats.js -->
     <script src="js/lib/stats.js"></script>
     <script>
       var count_particles, stats, update;
@@ -406,7 +418,7 @@
         requestAnimationFrame(update);
       };
       requestAnimationFrame(update);
-    </script>
+    </script>  -->
 
     <script>
       $(".main-menu li:first").addClass("active");
@@ -479,6 +491,29 @@
         }
       })
 
+
+
+
+
+
+
+      let modalBtn = document.getElementById("modal-btn")
+      let modal = document.querySelector(".modal")
+      let closeBtn = document.querySelector(".close-btn")
+      modalBtn.onclick = function(){
+        modal.style.display = "block"
+      }
+      window.onclick = function(e){
+        if(e.target == modal){
+          modal.style.display = "none"
+        }
+      }
+
     </script>
+
+
+
+
+
   </body>
 </html>

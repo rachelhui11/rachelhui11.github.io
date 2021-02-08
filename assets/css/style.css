@@ -404,19 +404,27 @@ button:hover {
 
 /* Skills */
 
-.my-skills .col-md-6 {
-    padding-left: 5px;
-    padding-right: 5px;
+#skills-heading {
+    margin-bottom: 30px;
 }
 
-#skills {
-    padding: 30px 30px 10px 30px;
+.my-skills .flex-container {
+    padding: 0px 20px;
+    min-height: 200px;
+	margin: 0 auto;
+    display: -webkit-flex; 	
+	display: flex;
+    flex-wrap: wrap;
 }
 
 .skill-item {
-    margin-bottom: 10px;
+    margin: 5px 5px;
     padding: 50px;
+    min-width: 300px;
     background-color: #F0E5D5;
+    -webkit-flex: 1;
+	-ms-flex: 1; 
+	flex: 1;
     transition: all 0.5s;
 }
 

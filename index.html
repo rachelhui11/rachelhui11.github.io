@@ -216,18 +216,20 @@
                 </form>
 
               <div class="isotope-box">
+
+                <!-- First work -->
+
                 <div class="isotope-item" data-type="branding">
                   <figure class="snip1321">
                     <img src="assets/images/2.png" alt="Business Card for Roland Gavrilescu"/>
                     <figcaption>
-                      <h4 id="modal-btn">Business Card</h4>
+                      <h4 id="modal-btn1">Business Card</h4>
                       <span>Roland Gavrilescu</span>
-                       </figcaption>
+                    </figcaption>
                   </figure>
                 </div>
 
-
-                <div class="modal" style="overflow-y: auto;">
+                <div class="modal1" style="overflow-y: auto;">
                   <div class="modal-content">
                     <img src="assets/images/4.png" alt="Website"/><br>
                     <img src="assets/images/4.png" alt="Website"/><br>
@@ -235,62 +237,108 @@
                   </div>
                 </div>
 
+
+                <!-- Second work -->
+
                 <div class="isotope-item" data-type="app">
                   <figure class="snip1321">
                     <img src="assets/images/1.png"
                       alt="E-Wallet Concept"/>
                     <figcaption>
-                      <a href="assets/images/1.png"
-                        data-lightbox="image-1" data-title="E-Wallet Concept">
-                      <h4>E-Wallet</h4></a>
+                      <h4 id="modal-btn2">E-Wallet</h4>
                       <span>Concept</span>
                     </figcaption>
                   </figure>
                 </div>
 
+                <div class="modal2" style="overflow-y: auto;">
+                  <div class="modal-content">
+                    <img src="assets/images/4.png" alt="Website"/><br>
+                    <img src="assets/images/4.png" alt="Website"/><br>
+                    <img src="assets/images/4.png" alt="Website"/>
+                  </div>
+                </div>
+
+                <!-- Third work -->
+
                 <div class="isotope-item" data-type="website">
                   <figure class="snip1321">
                     <img src="assets/images/3.png" alt="Website Redesign for Sollertia"/>
                     <figcaption>
-                      <a href="assets/images/3.png" data-lightbox="image-1" data-title="Website Redesign for Sollertia">
-                      <h4>Website Redesign</h4></a>
+                      <h4 id="modal-btn3">Website Redesign</h4>
                       <span>Sollertia</span>
                     </figcaption>
                   </figure>
                 </div>
 
+                <div class="modal3" style="overflow-y: auto;">
+                  <div class="modal-content">
+                    <img src="assets/images/4.png" alt="Website"/><br>
+                    <img src="assets/images/4.png" alt="Website"/><br>
+                    <img src="assets/images/4.png" alt="Website"/>
+                  </div>
+                </div>
+
+                <!-- Fourth work -->
+
                 <div class="isotope-item" data-type="app">
                   <figure class="snip1321">
                     <img src="assets/images/4.png" alt="App"/>
                     <figcaption>
-                      <a href="assets/images/4.png" data-lightbox="image-1" data-title="Caption">
-                      <h4>App</h4></a>
+                      <h4 id="modal-btn4">App</h4>
                       <span>Coming Soon</span>
                     </figcaption>
                   </figure>
                 </div>
+
+                <div class="modal4" style="overflow-y: auto;">
+                  <div class="modal-content">
+                    <img src="assets/images/4.png" alt="Website"/><br>
+                    <img src="assets/images/4.png" alt="Website"/><br>
+                    <img src="assets/images/4.png" alt="Website"/>
+                  </div>
+                </div>
+
+                <!-- Fifth work -->
 
                 <div class="isotope-item" data-type="branding">
                   <figure class="snip1321">
                     <img src="assets/images/4.png" alt="Branding"/>
                     <figcaption>
-                      <a href="assets/images/4.png" data-lightbox="image-1" data-title="Caption">
-                      <h4>Branding</h4></a>
+                      <h4 id="modal-btn5">Branding</h4>
                       <span>Coming Soon</span>
                     </figcaption>
                   </figure>
                 </div>
 
+                <div class="modal5" style="overflow-y: auto;">
+                  <div class="modal-content">
+                    <img src="assets/images/4.png" alt="Website"/><br>
+                    <img src="assets/images/4.png" alt="Website"/><br>
+                    <img src="assets/images/4.png" alt="Website"/>
+                  </div>
+                </div>
+
+                <!-- Sixth work -->
+
                 <div class="isotope-item" data-type="website">
                   <figure class="snip1321">
                     <img src="assets/images/4.png" alt="Website"/>
                     <figcaption>
-                      <a href="assets/images/4.png" data-lightbox="image-1" data-title="Caption">
-                      <h4>Website</h4></a>
+                      <h4 id="modal-btn6">Website</h4>
                       <span>Coming Soon</span>
                     </figcaption>
                   </figure>
                 </div>
+
+                <div class="modal6" style="overflow-y: auto;">
+                  <div class="modal-content">
+                    <img src="assets/images/4.png" alt="Website"/><br>
+                    <img src="assets/images/4.png" alt="Website"/><br>
+                    <img src="assets/images/4.png" alt="Website"/>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
@@ -497,23 +545,53 @@
 
 
 
-      let modalBtn = document.getElementById("modal-btn")
-      let modal = document.querySelector(".modal")
-      let closeBtn = document.querySelector(".close-btn")
-      modalBtn.onclick = function(){
-        modal.style.display = "block"
+      let modalBtn1 = document.getElementById("modal-btn1")
+      let modal1 = document.querySelector(".modal1")
+      modalBtn1.onclick = function(){
+        modal1.style.display = "block"
       }
+      
+      let modalBtn2 = document.getElementById("modal-btn2")
+      let modal2 = document.querySelector(".modal2")
+      modalBtn2.onclick = function(){
+        modal2.style.display = "block"
+      }
+      
+      let modalBtn3 = document.getElementById("modal-btn3")
+      let modal3 = document.querySelector(".modal3")
+      modalBtn3.onclick = function(){
+        modal3.style.display = "block"
+      }
+      
+      let modalBtn4 = document.getElementById("modal-btn4")
+      let modal4 = document.querySelector(".modal4")
+      modalBtn4.onclick = function(){
+        modal4.style.display = "block"
+      }
+      
+      let modalBtn5 = document.getElementById("modal-btn5")
+      let modal5 = document.querySelector(".modal5")
+      modalBtn5.onclick = function(){
+        modal5.style.display = "block"
+      }
+      
+      let modalBtn6 = document.getElementById("modal-btn6")
+      let modal6 = document.querySelector(".modal6")
+      modalBtn6.onclick = function(){
+        modal6.style.display = "block"
+      }
+      
       window.onclick = function(e){
-        if(e.target == modal){
-          modal.style.display = "none"
-        }
+          if (e.target == modal1 || e.target == modal2 || e.target == modal3 || e.target == modal4 || e.target == modal5 || e.target == modal6) {
+            e.target.style.display = "none"
+          }
       }
 
-    </script>
+      </script>
 
 
 
 
 
-  </body>
+</body>
 </html>

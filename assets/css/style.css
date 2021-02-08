@@ -498,10 +498,10 @@ button:hover {
 
 
 
-.modal {
+.modal1, .modal2, .modal3, .modal4, .modal5, .modal6 {
     display: none;
     position: fixed; 
-    padding-top: 50px;
+    padding: 50px 0px;
     left: 0; 
     top: 0;
     width: 100%;

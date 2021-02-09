@@ -510,9 +510,10 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 9999999;
   }
+
   .modal-content {
     position: relative; 
-    background-color: white;
+    background-color: #F7F4EF;
     padding: 20px; 
     margin: auto; 
     width: 75%;  
@@ -521,12 +522,14 @@ button:hover {
     animation-name: animatetop;
     animation-duration: 0.4s
   }
+
   .close-btn {
     float: right; 
     color: lightgray; 
     font-size: 24px;  
     font-weight: bold;
   }
+
   .close-btn:hover {
     color: darkgray;
   }
@@ -534,6 +537,7 @@ button:hover {
     from {top:-300px; opacity:0} 
     to {top:0; opacity:1}
   }
+  
   @keyframes animatetop {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}

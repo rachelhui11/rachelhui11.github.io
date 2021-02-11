@@ -514,7 +514,7 @@ button:hover {
   .modal-content {
     position: relative; 
     background-color: #F7F4EF;
-    padding: 20px; 
+    padding: 0px; 
     margin: auto; 
     width: 70%;  
     -webkit-animation-name: animatetop;
@@ -533,6 +533,7 @@ button:hover {
   .close-btn:hover {
     color: darkgray;
   }
+  
   @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0} 
     to {top:0; opacity:1}

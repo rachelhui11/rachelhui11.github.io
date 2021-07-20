@@ -461,6 +461,31 @@
                                 </div>
                             </div>
 
+                            
+                            <!-- Ninth work -->
+
+                            <div class="isotope-item" data-type="branding">
+                                <figure class="snip1321">
+                                    <img src="assets/images/logo.png" alt="Branding" />
+                                    <figcaption>
+                                        <h4 id="modal-btn9">Logofolio</h4>
+                                        <span>Logos</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="modal9" style="overflow-y: auto;">
+                                <div class="modal-content">
+                                    <img src="assets/images/b1.jpg" alt="Logo" /><br>
+                                    <img src="assets/images/b2.png" alt="Logo" /><br>
+                                    <img src="assets/images/b3.png" alt="Logo" /><br>
+                                    <img src="assets/images/b4.png" alt="Logo" /><br>
+                                    <img src="assets/images/b5.png" alt="Logo" /><br>
+                                    <img src="assets/images/b6.png" alt="Logo" />
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -695,8 +720,14 @@
             modal8.style.display = "block"
         }
 
+        let modalBtn9 = document.getElementById("modal-btn9")
+        let modal9 = document.querySelector(".modal9")
+        modalBtn9.onclick = function() {
+            modal9.style.display = "block"
+        }
+
         window.onclick = function(e) {
-            if (e.target == modal1 || e.target == modal2 || e.target == modal3 || e.target == modal4 || e.target == modal5 || e.target == modal6 || e.target == modal7 || e.target == modal8) {
+            if (e.target == modal1 || e.target == modal2 || e.target == modal3 || e.target == modal4 || e.target == modal5 || e.target == modal6 || e.target == modal7 || e.target == modal8 || e.target == modal9) {
                 e.target.style.display = "none"
             }
         }

@@ -506,7 +506,8 @@ button:hover {
 .modal5,
 .modal6,
 .modal7,
-.modal8 {
+.modal8,
+.modal9 {
     display: none;
     position: fixed;
     padding: 50px 0px;
